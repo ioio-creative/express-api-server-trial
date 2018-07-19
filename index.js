@@ -47,7 +47,7 @@ app.post(apiEndPointPrefix + 'test', (req, res) => {
   console.log(`Button ${reqBody.btnPressed} is pressed.`);
   res.json({
     message: `Request: ${JSON.stringify(reqBody)} received`,
-    buttonA: reqBody.btnA
+    down: reqBody.down[0]
   });
 });
 
